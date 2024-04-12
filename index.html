@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acceder al recurso - Sin conexión</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: rgb(0, 0, 0);
+      color: white;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+
+    .content {
+      text-align: center;
+
+    }
+
+    .content h3 {
+      font-size: 28px;
+      margin: 0;
+      
+    }
+
+    .content p {
+      font-size: 18px;
+      color: rgb(68, 68, 68);
+      font-weight: 600;
+      margin-bottom: 20px;
+      margin-bottom: 74px;
+    }
+
+    .options ul {
+      margin-left: 0;
+      padding-left: 0;
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .options li {
+      margin-bottom: 20px;
+    }
+
+    a {
+      position: relative;
+      display: inline-block;
+      padding: 15px 30px;
+      color: #2196f3;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      text-decoration: none;
+      font-size: 24px;
+      overflow: hidden;
+      transition: 0.2s;
+    }
+
+    a:hover {
+      color: #64ff1c;
+      background-color: #141414;
+      box-shadow: 0 0 10px #b3ddff, 0 0 10px #b3ddff, 0 0 10px #b3ddff, 0 0 10px #b3ddff;
+    }
+
+    a span {
+      position: absolute;
+      display: block;
+    }
+
+    a span:nth-child(1) {
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #ffffff);
+    }
+
+    a:hover span:nth-child(1) {
+      left: 100%;
+      transition: 1s;
+    }
+
+    a span:nth-child(3) {
+      bottom: 0;
+      right: -100%;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(270deg, transparent, #ffffff);
+    }
+
+    a:hover span:nth-child(3) {
+      left: 100%;
+      transition: 1s;
+      transition-delay: 0.5s;
+    }
+
+    @import url('https://fonts.googleapis.com/css?family=Baloo+Thambi');
+
+    .container > span {
+      animation: glow 1.7s ease-in-out infinite; /* Animación más lenta */
+    }
+
+    @keyframes glow {
+      0%, 100% {
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 12px lime, 0 0 50px lime, 0 0 100px lime;
+      }
+      50%, 20% {
+        color: rgb(78, 76, 76);
+        text-shadow: none;
+      }
+    }
+
+    .container > span:nth-child(1) {
+      animation-delay: 0s; /* Todas las letras comienzan la animación al mismo tiempo */
+    }
+
+    .container {
+      margin: 30px;
+    }
+    img{
+      width: 100px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="content">
+    <div class="container">
+      <span>S</span>
+      <span>i</span>
+      <span>n</span>
+      &nbsp;
+      <span>C</span>
+      <span>o</span>
+      <span>n</span>
+      <span>e</span>
+      <span>x</span>
+      <span>i</span>
+      <span>ó</span>
+      <span>n</span>
+    </div>
+    <p>Lamentamos informarle que no se ha podido encontrar la comunicación esperada. Le sugerimos acceder al recurso compartido del router y ejecutar el archivo de configuración para reasignar el direccionamiento.</p>
+    <h3>Opciones para retomar su conexión</h3>
+    <div class="options"> <!-- Contenedor para centrar las opciones -->
+      <ul>
+        <li><a href="//recurso" target="_blank">Intentar retomar recurso <span></span><span></span><span></span><span></span></a></li>
+        <li><a href="http://192.168.1.3/instrucciones.html" target="_blank">Acceder Directamente al recurso <span></span><span></span><span></span><span></span></a></li>
+        <li><a href="http://192.168.1.1/" target="_blank">Acceder al Router desde el navegador <span></span><span></span><span></span><span></span></a></li>
+      </ul>
+    </div>
+    <img src="noconex.jpeg" alt="">
+  </div>
+</body>
+</html>
